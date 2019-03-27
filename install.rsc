@@ -2,7 +2,7 @@
 :put "CREATING USB Script"
 /system script remove [/system script find name="MSN-disable-usb"]
 /system script
-add dont-require-permissions=no name=MSN-disable-usb owner=admin policy=\
+add dont-require-permissions=no name=MSN-disable-usb policy=\
     read,write,policy source="/system routerboard usb power-reset duration=360\
     0s\r\
     \n:log info \"USB disable timer has been reset\""
