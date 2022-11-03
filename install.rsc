@@ -15,7 +15,7 @@ add name=MSN-disable-usb-onstart on-event="/system script run MSN-disable-usb\
     \r\
     \n:log info \"USB has been disabled after reboot!\"" policy=\
     read,write,policy,test start-time=startup
-add interval=1m name=MSN-disable-usb-hourly on-event="/system script run MSN-d\
+add interval=60m name=MSN-disable-usb-hourly on-event="/system script run MSN-d\
     isable-usb\r\
     \n:log info \"Script disable-usb has been run\"" policy=\
     read,write,policy,test start-time=startup
